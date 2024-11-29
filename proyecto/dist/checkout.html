@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+  <!-- Page Meta Tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+
+  <!-- Custom Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled-->
+  <noscript>
+    <style>
+      /**
+          * Reinstate scrolling for non-JS clients
+          */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title>SkateLine</title>
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNWJTRKR86"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QNWJTRKR86');
+</script>
+<body class="">
+
+    <!-- Main Section-->
+    <section class="mt-0  vh-lg-100">
+        <!-- Page Content Goes Here -->
+        <div class="container">
+            <div class="row g-0 vh-lg-100">
+                <div class="col-lg-7 pt-5 pt-lg-10">
+                    <div class="pe-lg-5">
+                        <!-- Logo-->
+                        <a class="navbar-brand fw-bold fs-3 flex-shrink-0 mx-0 px-0" href="./index.html">
+                          <div class="d-flex align-items-center">
+                            <img class="f-w-7" src="./assets/images/favicon/favicon-32x32.png" alt="">
+                        </div>
+                            </a>
+                        <!-- / Logo-->
+                        <nav class="d-none d-md-block">
+                            <ul class="list-unstyled d-flex justify-content-start mt-4 align-items-center fw-bolder small">
+                                <li class="me-4"><a class="nav-link-checkout "
+                                        href="./cart.html">Tu Carrito</a></li>
+                                <li class="me-4"><a class="nav-link-checkout active"
+                                        href="./checkout.html">Información</a></li>
+                                <li class="me-4"><a class="nav-link-checkout "
+                                        href="./checkout-shipping.html">Envio</a></li>
+                                <li><a class="nav-link-checkout nav-link-last "
+                                        href="./checkout-payment.html">Payment</a></li>
+                            </ul>
+                        </nav>                        <div class="mt-5">
+                            <!-- Checkout Panel Information-->
+                            <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-4">
+                              <h3 class="fs-5 fw-bolder m-0 lh-1">Información de contacto</h3>
+                              <small class="text-muted fw-bolder">Ya tienes una Cuenta? <a href="./login.html">Iniciar</a></small>
+                            </div>
+                            <div class="row">
+                              <!-- First Name-->
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="firstNameBilling" class="form-label">Nombre(s)</label>
+                                  <input type="text" class="form-control" id="firstNameBilling" placeholder="" value="" required="">
+                                </div>
+                              </div>
+                            
+                              <!-- Last Name-->
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="lastNameBilling" class="form-label">Apellidos</label>
+                                  <input type="text" class="form-control" id="lastNameBilling" placeholder="" value="" required="">
+                                </div>
+                              </div>
+                            
+                              <!-- Email-->
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="email" class="form-label">Correo</label>
+                                  <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com">
+                                </div>
+                            
+                                <!-- Mailing List Signup-->
+                                <div class="form-group form-check m-0">
+                                  <input type="checkbox" class="form-check-input" id="add-mailinglist" checked>
+                                  <label class="form-check-label small text-muted" for="add-mailinglist">Mantenme actualizado con las ultimas ofertas y noticias</label>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <h3 class="fs-5 mt-5 fw-bolder mb-4 border-bottom pb-4">Dirección de Envío</h3>
+                            <div class="row">
+                              <!-- First Name-->
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="firstName" class="form-label">Nombre(s)</label>
+                                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                </div>
+                              </div>
+                            
+                              <!-- Last Name-->
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="lastName" class="form-label">Apellidos</label>
+                                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                </div>
+                              </div>
+                            
+                              <!-- Address-->
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="address" class="form-label">Dirección</label>
+                                  <input type="text" class="form-control" id="address" placeholder="Hacienda Milpillas #203" required="">
+                                </div>
+                              </div>
+                            
+                              <!-- Country-->
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label for="country" class="form-label">Estado</label>
+                                  <select class="form-select" id="country" required="">
+                                    <option value="">Porfavor Selecciona...</option>
+                                    <option>Aguascalientes</option>
+                                  </select>
+                                </div>
+                              </div>
+                            
+                              <!-- State-->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="state" class="form-label">Municipio</label>
+                                  <select class="form-select" id="state" required="">
+                                    <option value="">Porfavor Selecciona...</option>
+                                    <option>Aguascalientes</option>
+                                    <option>Asientos</option>
+                                    <option>Calvillo</option>
+                                    <option>Cosío</option>
+                                    <option>Jesús María</option>
+                                    <option>Pabellón de Arteaga</option>
+                                    <option>Rincón de Romos</option>
+                                    <option>San José de Gracia</option>
+                                    <option>Tepezalá</option>
+                                    <option>San Francisco de los Romos</option>
+                                    <option>El Llano</option>
+                
+                                  </select>
+                                </div>
+                              </div>
+                            
+                              <!-- Post Code-->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="zip" class="form-label">Zip/Código Postal</label>
+                                  <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="pt-4 mt-4 pb-5 border-top d-flex justify-content-between align-items-center">
+                              <!-- Shipping Same Checkbox-->
+                              <div class="form-group form-check m-0">
+                                <input type="checkbox" class="form-check-input" id="same-address" checked>
+                                <label class="form-check-label" for="same-address">Usar tu Dirección de Facturación</label>
+                              </div>
+                            </div>
+                            
+                            <!-- Billing Address-->
+                            <div class="billing-address d-none">
+                              <h3 class="fs-5 fw-bolder mb-4 border-bottom pb-4">Dirección de Facturación</h3>
+                              <div class="row">
+                                <!-- First Name-->
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label for="firstNameAddress" class="form-label">Nombre(s)</label>
+                                    <input type="text" class="form-control" id="firstNameAddress" placeholder="" value="" required="">
+                                  </div>
+                                </div>
+                            
+                                <!-- Last Name-->
+                                <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <label for="lastNameAddress" class="form-label">Apellidos</label>
+                                    <input type="text" class="form-control" id="lastNameAddress" placeholder="" value="" required="">
+                                  </div>
+                                </div>
+                            
+                                <!-- Address-->
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <label for="addressAddress" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" id="addressAddress" placeholder="Hacienda milpillas #203" required="">
+                                  </div>
+                                </div>
+                            
+                                <!-- Country-->
+                                <div class="col-md-12">
+                                  <div class="form-group">
+                                    <label for="countryAddress" class="form-label">Estado</label>
+                                    <select class="form-select" id="countryAddress" required="">
+                                      <option value="">Porfavor Selecciona...</option>
+                                      <option>Aguascalientes</option>
+                                      <option>Asientos</option>
+                                      <option>Calvillo</option>
+                                      <option>Cosío</option>
+                                      <option>Jesús María</option>
+                                      <option>Pabellón de Arteaga</option>
+                                      <option>Rincón de Romos</option>
+                                      <option>San José de Gracia</option>
+                                      <option>Tepezalá</option>
+                                      <option>San Francisco de los Romos</option>
+                                      <option>El Llano</option>  
+                                    </select>
+                                  </div>
+                                </div>
+                            
+                                <!-- State-->
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label for="stateAddress" class="form-label">Município</label>
+                                    <select class="form-select" id="stateAddress" required="">
+                                      <option value="">Porfavor Selecciona...</option>
+                                      <option>California</option>
+                                    </select>
+                                  </div>
+                                </div>
+                            
+                                <!-- Post Code-->
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label for="zipAddress" class="form-label">Zip/Código Postal</label>
+                                    <input type="text" class="form-control" id="zipAddress" placeholder="" required="">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- / Billing Address-->
+                            
+                            <div class="pt-5 mt-5 pb-5 border-top d-flex justify-content-md-end align-items-center">
+                              <a href="https://buy.stripe.com/test_eVadSXfOEckE5OMfYY" class="btn btn-dark w-100 w-md-auto" role="button">Pagar</a>
+                            </div>                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 bg-light pt-lg-10 aside-checkout pb-5 pb-lg-0 my-5 my-lg-0">
+                    <div class="p-4 py-lg-0 pe-lg-0 ps-lg-5">
+                        <div class="pb-3">
+                            <!-- Cart Item-->
+                            <div class="row mx-0 py-4 g-0 border-bottom">
+                                <div class="col-2 position-relative">
+                                        <span class="checkout-item-qty">1</span>
+                                    <picture class="d-block border">
+                                        <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    </picture>
+                                </div>
+                                <div class="col-9 offset-1">
+                                    <div>
+                                        <h6 class="justify-content-between d-flex align-items-start mb-2">
+                                          Playera Jason Black
+                                            <i class="ri-close-line ms-3"></i>
+                                        </h6>
+                                        <span class="d-block text-muted fw-bolder text-uppercase fs-9"> Cantidad: 1</span>
+                                    </div>
+                                    <p class="fw-bolder text-end text-muted m-0">$250</p>
+                                </div>
+                            </div>    <!-- / Cart Item-->
+                            <!-- Cart Item-->
+                            <div class="row mx-0 py-4 g-0 border-bottom">
+                                <div class="col-2 position-relative">
+                                        <span class="checkout-item-qty">1</span>
+                                    <picture class="d-block border">
+                                        <img class="img-fluid" src="./assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    </picture>
+                                </div>
+                                <div class="col-9 offset-1">
+                                    <div>
+                                        <h6 class="justify-content-between d-flex align-items-start mb-2">
+                                          Playera Catzilla
+                                            <i class="ri-close-line ms-3"></i>
+                                        </h6>
+                                        <span class="d-block text-muted fw-bolder text-uppercase fs-9">Cantidad: 1</span>
+                                    </div>
+                                    <p class="fw-bolder text-end text-muted m-0">$300</p>
+                                </div>
+                            </div>    <!-- / Cart Item-->
+                        </div>
+                        <div class="py-4 border-bottom">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="m-0 fw-bolder fs-6">Subtotal</p>
+                                <p class="m-0 fs-6 fw-bolder">$560</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <p class="m-0 fw-bolder fs-6">Envío</p>
+                                <p class="m-0 fs-6 fw-bolder">$200</p>
+                            </div>
+                        </div>
+                        <div class="py-4 border-bottom">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="m-0 fw-bold fs-5">Total</p>
+                                    <span class="text-muted small">Incluido IVA</span>
+                                </div>
+                                <p class="m-0 fs-5 fw-bold">$760</p>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            <div class="input-group mb-0">
+                                <input type="text" class="form-control" placeholder="Código de Descuento">
+                                <button class="btn btn-dark btn-sm px-4">Aplicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+</body>
+
+</html>

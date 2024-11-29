@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+
+<head>
+    <!-- Page Meta Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Custom Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+    <!-- Fix for custom scrollbar if JS is disabled-->
+    <noscript>
+        <style>
+            /**
+          * Reinstate scrolling for non-JS clients
+          */
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+
+    <!-- Page Title -->
+    <title>SkateLine</title>
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNWJTRKR86"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QNWJTRKR86');
+</script>
+
+<body class="">
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white flex-column border-0  ">
+        <div class="container-fluid">
+            <div class="w-100">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+                    <!-- Logo-->
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.html">
+                        <div class="d-flex align-items-center">
+                            <img class="f-w-7" src="./assets/images/favicon/favicon-32x32.png" alt="">
+                        </div>
+                    </a>
+                    <!-- / Logo-->
+
+                    <!-- Navbar Icons-->
+                    <ul class="list-unstyled mb-0 d-flex align-items-center order-1 order-lg-2 nav-sidelinks">
+
+                        <!-- Mobile Nav Toggler-->
+                        <li class="d-lg-none">
+                            <span class="nav-link text-body d-flex align-items-center cursor-pointer"
+                                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                                aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation"><i class="ri-menu-line ri-lg me-1"></i> Menú</span>
+                        </li>
+                        <!-- /Mobile Nav Toggler-->
+
+                        <!-- Navbar Search-->
+                        <li class="d-none d-sm-block">
+                            <span class="nav-link text-body search-trigger cursor-pointer">Búscar</span>
+
+                            <!-- Search navbar overlay-->
+                            <div class="navbar-search d-none">
+                                <div class="input-group mb-3 h-100">
+                                    <span class="input-group-text px-4 bg-transparent border-0"><i
+                                            class="ri-search-line ri-lg"></i></span>
+                                    <input type="text" class="form-control text-body bg-transparent border-0"
+                                        placeholder="">
+                                    <span
+                                        class="input-group-text px-4 cursor-pointer disable-child-pointer close-search bg-transparent border-0"><i
+                                            class="ri-close-circle-line ri-lg"></i></span>
+                                </div>
+                            </div>
+                            <div class="search-overlay"></div>
+                            <!-- / Search navbar overlay-->
+
+                        </li>
+                        <!-- /Navbar Search-->
+
+                        <!-- Navbar Login-->
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="./login.html">
+                                Cuenta
+                            </a>
+                        </li>
+                        <!-- /Navbar Login-->
+                        <!-- Navbar Login-->
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="./wishlist.html">
+                                Lista de deseos
+                            </a>
+                        </li>
+                        <!-- /Navbar Login-->
+                        <!-- Navbar Cart Icon-->
+                        <li class="ms-1 d-inline-block position-relative dropdown-cart">
+                            <button class="nav-link me-0 disable-child-pointer border-0 p-0 bg-transparent text-body"
+                                type="button">
+                                Carrito (2)
+                            </button>
+                            <div class="cart-dropdown dropdown-menu">
+
+                                <!-- Cart Header-->
+                                <div class="d-flex justify-content-between align-items-center border-bottom pt-3 pb-4">
+                                    <h6 class="fw-bolder m-0">Resumen de compra (2)</h6>
+                                    <i class="ri-close-circle-line text-muted ri-lg cursor-pointer btn-close-cart"></i>
+                                </div>
+                                <!-- / Cart Header-->
+
+                                <!-- Cart Items-->
+                                <div>
+
+                                    <div class="table-responsive">
+                                        <table class="table align-middle">
+                                            <tbody class="border-0">
+                                                <!-- Cart Item-->
+                                                <div class="row mx-0 py-4 g-0 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <picture class="d-block border">
+                                                            <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="col-9 offset-1">
+                                                        <div>
+                                                            <h6 class="justify-content-between d-flex align-items-start mb-2">
+                                                                Playera Jason Black
+                                                                <i class="ri-close-line ms-3"></i>
+                                                            </h6>
+        
+                                                            <span class="d-block text-muted fw-bolder text-uppercase fs-9"> CANTIDAD: 1</span>
+                                                        </div>
+                                                        <p class="fw-bolder text-end text-muted m-0">$250</p>
+                                                    </div>
+                                                </div>          
+                                                <div class="row mx-0 py-4 g-0 border-bottom">
+                                                    <div class="col-2 position-relative">
+                                                        <picture class="d-block border">
+                                                            <img class="img-fluid" src="./assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="col-9 offset-1">
+                                                        <div>
+                                                            <h6 class="justify-content-between d-flex align-items-start mb-2">
+                                                                Playera Catzilla
+                                                                <i class="ri-close-line ms-3"></i>
+                                                            </h6>
+        
+                                                            <span class="d-block text-muted fw-bolder text-uppercase fs-9"> CANTIDAD: 1</span>
+                                                        </div>
+                                                        <p class="fw-bolder text-end text-muted m-0">$300</p>
+                                                    </div>
+                                                </div>                                         <!-- / Cart Item-->
+                                                <!-- Cart Item-->
+                                                                                  <!-- / Cart Item-->
+        
+                                            </tbody>
+                                        </table>
+                                    </div>
+                    
+                                    <!-- Cart Product-->
+                                    
+                                <!-- /Cart Items-->
+
+                               
+                                    <a href="./cart.html" class="btn btn-dark w-100 text-center mt-4"
+                                        role="button">Ver Carrito</a>
+                                   
+                                </div>
+                                <!-- / Cart Summary-->
+                            </div>
+
+
+                        </li>
+                        <!-- /Navbar Cart Icon-->
+
+                    </ul>
+                    <!-- Navbar Icons-->
+
+                    <!-- Main Navigation-->
+                    <div class="flex-shrink-0 collapse navbar-collapse navbar-collapse-light w-auto flex-grow-1 order-2 order-lg-1"
+                        id="navbarNavDropdown">
+
+                        <!-- Menu-->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown dropdown position-static">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    SkateLine
+                                </a>
+                                <!-- Menswear dropdown menu-->
+                                <div class="dropdown-menu dropdown-megamenu">
+                                    <div class="container-fluid">
+                                        <div class="row g-0 g-lg-3">
+                                            <!-- Menswear Dropdown Menu Links Section-->
+                                            <div class="col col-lg-8 py-lg-5">
+                                                <div class="row py-3 py-lg-0 flex-wrap gx-4 gy-6">
+                                                    <!-- menu row-->
+                                                    <div class="col">
+                                                        <h6 class="dropdown-heading">Ropa </h6>
+                                                        <ul class="list-unstyled">
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Playeras</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Camisas</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Sudaderas</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Chamarras</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Pantalones y Bermudas</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Overoles</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Calcetas</a></li>
+                                                            
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item dropdown-link-all"
+                                                                    href="./category.html">Ver Todo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- / menu row-->
+
+                                                    <!-- menu row-->
+                                                    <div class="col">
+                                                        <h6 class="dropdown-heading">Accesorios</h6>
+                                                        <ul class="list-unstyled">
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Gorras</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Mochilas</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Cangureras</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Bukets</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Lentes de sol</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Portallaves</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Pins</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Peluches</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item dropdown-link-all"
+                                                                    href="./category.html">Ver Todo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- / menu row-->
+
+                                                    <!-- menu row-->
+                                                    <div class="d-none d-xxl-block col">
+                                                        <h6 class="dropdown-heading">Skate</h6>
+                                                        <ul class="list-unstyled">
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Tablas</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Protecciones</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Herramienta</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Baleros</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Trucks</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Llantas</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Tornillos</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Lijas</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item dropdown-link-all"
+                                                                    href="./category.html">Ver Todo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- / menu row-->
+
+                                                                                                    <!-- / menu row-->
+                                                </div>
+
+                                               
+                                                    <a href="./category.html"
+                                                        class="btn btn-link p-0 fw-bolder text-link-border mt-5 text-dark mx-auto d-table">Visita
+                                                        las diferentes categorias</a>
+                                                </div>
+                                            </div>
+                                            <!-- Menswear Dropdown Menu Images Section-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / Menswear dropdown menu-->
+                            </li>
+                                                        
+                            
+                        </ul> <!-- / Menu-->
+
+                    </div>
+                    <!-- / Main Navigation-->
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- / Navbar--> <!-- / Navbar-->
+
+    <!-- Main Section-->
+    <section class="mt-0 ">
+        <!-- Page Content Goes Here -->
+
+        <!-- Category Top Banner -->
+        <div class="py-10 bg-img-cover bg-overlay-dark position-relative overflow-hidden bg-pos-center-center rounded-0"
+            style="background-image: url(./assets/images/banners/banner-category-top.jpg);">
+            <div class="container-fluid position-relative z-index-20" data-aos="fade-right" data-aos-delay="300">
+                <h1 class="fw-bold display-6 mb-4 text-white">Playeras</h1>
+                <div class="col-12 col-md-6">
+                    <p class="text-white mb-0 fs-5">
+                        Entra a nuestra tienda y siente el espíritu del skateboarding en cada rincón. Somos un espacio diseñado para los amantes del skate, donde encontrarás ropa urbana, cómoda y resistente, diseñada especialmente para riders. Ofrecemos una amplia variedad de marcas icónicas y exclusivas, con camisetas, hoodies, jeans, gorras y zapatillas que combinan estilo y funcionalidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Category Top Banner -->
+
+        <div class="container-fluid" data-aos="fade-in">
+            <!-- Category Toolbar-->
+            <div class="d-flex justify-content-between items-center pt-5 pb-4 flex-column flex-lg-row">
+                <div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="#">Ropa</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Playeras</li>
+                        </ol>
+                    </nav>
+                    <h1 class="fw-bold fs-3 mb-2">Antifashion (9)</h1>
+                    <p class="m-0 text-muted small">Mostrando 1 - 9</p>
+                </div>
+                <div class="d-flex justify-content-end align-items-center mt-4 mt-lg-0 flex-column flex-md-row">
+
+                    <!-- Filter Trigger-->
+                    <button
+                        class="btn bg-light p-3 me-md-3 d-flex align-items-center fs-7 lh-1 w-100 mb-2 mb-md-0 w-md-auto "
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters"
+                        aria-controls="offcanvasFilters">
+                        <i class="ri-equalizer-line me-2"></i> Filtros
+                    </button>
+                    <!-- / Filter Trigger-->
+
+                    <!-- Sort Options-->
+                    <select class="form-select form-select-sm border-0 bg-light p-3 pe-5 lh-1 fs-7">
+                        <option selected>Ordenar por</option>
+                        <option value="1">Costo más alto</option>
+                        <option value="2">Costo más bajo</option>
+                        <option value="3">Nombre</option>
+                    </select>
+                    <!-- / Sort Options-->
+                </div>
+            </div> <!-- /Category Toolbar-->
+
+            <!-- Products-->
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Card Product-->
+                    <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        <div class="card-img position-relative">
+                            <div class="card-badges">
+                                <span class="badge badge-card"><span
+                                        class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Venta</span>
+                            </div>
+                            <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i
+                                    class="ri-heart-line"></i></span>
+                            <picture class="position-relative overflow-hidden d-block bg-light">
+                                <img class="w-100 img-fluid position-relative z-index-10" title=""
+                                    src="./assets/images/products/product-cart-2.jpg" alt="">
+                            </picture>
+                            <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar
+                                    Anuncio</button>
+                            </div>
+                        </div>
+                        <div class="card-body px-0">
+                            <a class="text-decoration-none link-cover" href="./product1.html">Playera Catzilla</a>
+                            <small class="text-muted d-block">Tallas: S, M, G, XL </small>
+                            <p class="mt-2 mb-0 small"><s class="text-muted">$300</s> <span
+                                    class="text-danger">$360</span></p>
+                        </div>
+                    </div>
+                    <!--/ Card Product-->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Card Product-->
+                    <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        <div class="card-img position-relative">
+                            <div class="card-badges">
+                                <span class="badge badge-card"><span
+                                        class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> New In</span>
+                            </div>
+                            <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i
+                                    class="ri-heart-line"></i></span>
+                            <picture class="position-relative overflow-hidden d-block bg-light">
+                                <img class="w-100 img-fluid position-relative z-index-10" title=""
+                                    src="./assets/images/products/product-cart-1.jpg" alt="">
+                            </picture>
+                            <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar
+                                    Anuncio</button>
+                            </div>
+                        </div>
+                        <div class="card-body px-0">
+                            <a class="text-decoration-none link-cover" href="./product2.html">Playera Jason Black</a>
+                            <small class="text-muted d-block">Tallas: S, M, G, XL</small>
+                            <p class="mt-2 mb-0 small">$250</p>
+                        </div>
+                    </div>
+                    <!--/ Card Product-->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Card Product-->
+                    <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        <div class="card-img position-relative">
+                            <div class="card-badges">
+                                <span class="badge badge-card"><span
+                                        class="f-w-2 f-h-2 bg-secondary rounded-circle d-block me-1"></span>
+                                    Agotado</span>
+                            </div>
+                            <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i
+                                    class="ri-heart-line"></i></span>
+                            <picture class="position-relative overflow-hidden d-block bg-light">
+                                <img class="w-100 img-fluid position-relative z-index-10" title=""
+                                    src="./assets/images/products/product-3.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="card-body px-0">
+                            <a class="text-decoration-none link-cover" href="./product3.html">Rompevientos Antitoon Vino</a>
+                            <small class="text-muted d-block">Tallas: S, M, G, XL</small>
+                            <p class="mt-2 mb-0 small text-muted">Agotado</p>
+                        </div>
+                    </div>
+                    <!--/ Card Product-->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Card Product-->
+                    <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        <div class="card-img position-relative">
+                            <div class="card-badges">
+                            </div>
+                            <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i
+                                    class="ri-heart-line"></i></span>
+                            <picture class="position-relative overflow-hidden d-block bg-light">
+                                <img class="w-100 img-fluid position-relative z-index-10" title=""
+                                    src="./assets/images/products/product-4.jpg" alt="">
+                            </picture>
+                            <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar
+                                    Anuncio</button>
+                            </div>
+                        </div>
+                        <div class="card-body px-0">
+                            <a class="text-decoration-none link-cover" href="./product4.html">Bermuda Cargo Negro</a>
+                            <small class="text-muted d-block">Tallas: S, M, G</small>
+                            <p class="mt-2 mb-0 small">$509</p>
+                        </div>
+                    </div>
+                    <!--/ Card Product-->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Card Product-->
+                    <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        <div class="card-img position-relative">
+                            <div class="card-badges">
+                                <span class="badge badge-card"><span
+                                        class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span>
+                            </div>
+                            <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i
+                                    class="ri-heart-line"></i></span>
+                            <picture class="position-relative overflow-hidden d-block bg-light">
+                                <img class="w-100 img-fluid position-relative z-index-10" title=""
+                                    src="./assets/images/products/product-5.jpg" alt="">
+                            </picture>
+                            <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar
+                                    Anuncio</button>
+                            </div>
+                        </div>
+                        <div class="card-body px-0">
+                            <a class="text-decoration-none link-cover" href="./product5.html">Overol Gabardina Beige</a>
+                            <small class="text-muted d-block">Tallas: S, M, G</small>
+                            <p class="mt-2 mb-0 small"><s class="text-muted">$759</s> <span
+                                    class="text-danger">$575</span></p>
+                        </div>
+                    </div>
+                    <!--/ Card Product-->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Card Product-->
+                    <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        <div class="card-img position-relative">
+                            <div class="card-badges">
+                                <span class="badge badge-card"><span
+                                        class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span>
+                                <span class="badge badge-card"><span
+                                        class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span></span>
+                            </div>
+                            <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i
+                                    class="ri-heart-line"></i></span>
+                            <picture class="position-relative overflow-hidden d-block bg-light">
+                                <img class="w-100 img-fluid position-relative z-index-10" title=""
+                                    src="./assets/images/products/product-6.jpg" alt="">
+                            </picture>
+                            <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar
+                                    Anuncio</button>
+                            </div>
+                        </div>
+                        <div class="card-body px-0">
+                            <a class="text-decoration-none link-cover" href="./product-6.html">Maleta Melted</a>
+                            <small class="text-muted d-block">Alto:54, Ancho:36 Profundo:22</small>
+                            <p class="mt-2 mb-0 small"><s class="text-muted">$1,199</s> <span
+                                    class="text-danger">$876</span></p>
+                        </div>
+                    </div>
+                    <!--/ Card Product-->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Card Product-->
+                    <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        <div class="card-img position-relative">
+                            <div class="card-badges">
+                            </div>
+                            <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i
+                                    class="ri-heart-line"></i></span>
+                            <picture class="position-relative overflow-hidden d-block bg-light">
+                                <img class="w-100 img-fluid position-relative z-index-10" title=""
+                                    src="./assets/images/products/product-7.jpg" alt="">
+                            </picture>
+                            <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar
+                                    Anuncio</button>
+                            </div>
+                        </div>
+                        <div class="card-body px-0">
+                            <a class="text-decoration-none link-cover" href="./product7.html">Calcetas Rabbits Verde</a>
+                            <small class="text-muted d-block"></small>
+                            <p class="mt-2 mb-0 small">$119</p>
+                        </div>
+                    </div>
+                    <!--/ Card Product-->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Card Product-->
+                    <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        <div class="card-img position-relative">
+                            <div class="card-badges">
+                                <span class="badge badge-card"><span
+                                        class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> Nuevo</span>
+                            </div>
+                            <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i
+                                    class="ri-heart-line"></i></span>
+                            <picture class="position-relative overflow-hidden d-block bg-light">
+                                <img class="w-100 img-fluid position-relative z-index-10" title=""
+                                    src="./assets/images/products/product-8.jpg" alt="">
+                            </picture>
+                            <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar
+                                    Anuncio</button>
+                            </div>
+                        </div>
+                        <div class="card-body px-0">
+                            <a class="text-decoration-none link-cover" href="./product-8.html">Tabla Devil Your Head</a>
+                            <small class="text-muted d-block">8.5 pulgadas </small>
+                            <p class="mt-2 mb-0 small">$849</p>
+                        </div>
+                    </div>
+                    <!--/ Card Product-->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <!-- Card Product-->
+                    <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                        <div class="card-img position-relative">
+                            <div class="card-badges">
+                                <span class="badge badge-card"><span
+                                        class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> Venta</span>
+                            </div>
+                            <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i
+                                    class="ri-heart-line"></i></span>
+                            <picture class="position-relative overflow-hidden d-block bg-light">
+                                <img class="w-100 img-fluid position-relative z-index-10" title=""
+                                    src="./assets/images/products/product-9.jpg" alt="">
+                            </picture>
+                            <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar
+                                    Anuncio</button>
+                            </div>
+                        </div>
+                        <div class="card-body px-0">
+                            <a class="text-decoration-none link-cover" href="./product-9.html">Bucket No fellings</a>
+                            <small class="text-muted d-block"></small>
+                            <p class="mt-2 mb-0 small">$ 340.00</p>
+                        </div>
+                    </div>
+                    <!--/ Card Product-->
+                </div>
+            </div>
+            <!-- / Products-->
+
+            <!-- Pagination-->
+            <div class="d-flex flex-column f-w-44 mx-auto my-5 text-center">
+                <small class="text-muted">Antifashion</small>
+                
+                <a href="#" class="btn btn-outline-dark btn-sm mt-5 align-self-center py-3 px-4 border-2">Regresar</a>
+            </div> <!-- / Pagination-->
+        </div>
+
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    <footer class="border-top py-5 mt-4  ">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                <div>
+                    <ul class="list-unstyled">
+                        <li class="d-inline-block me-1"><a target="_blank" class="text-decoration-none text-dark-hover transition-all"
+                                href="https://www.instagram.com/kiwii.toys/"><i class="ri-instagram-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all" 
+                                href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center justify-content-end flex-column flex-lg-row">
+                    <p class="small m-0 text-center text-lg-start">&copy;2024 SkateLine Todos los derechos reservados.</p>
+                    <ul class="list-unstyled mb-0 ms-lg-4 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
+                        <li class="bg-light p-2 d-flex align-items-center justify-content-center me-2">
+                            <i class="pi pi-sm pi-paypal"></i>
+                        </li>
+                        <li class="bg-light p-2 d-flex align-items-center justify-content-center me-2">
+                            <i class="pi pi-sm pi-mastercard"></i>
+                        </li>
+                        <li class="bg-light p-2 d-flex align-items-center justify-content-center"><i
+                                class="pi pi-sm pi-visa"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- / Footer-->
+
+
+    <!-- Offcanvas Imports-->
+    <!-- Filters Offcanvas-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFilters" aria-labelledby="offcanvasFiltersLabel">
+        <div class="offcanvas-header pb-0 d-flex align-items-center">
+            <h5 class="offcanvas-title" id="offcanvasFiltersLabel">Filtros de Categoria</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex flex-column justify-content-between w-100 h-100">
+
+                <!-- Filters-->
+                <div>
+
+                    <!-- Price Filter -->
+                    <div class="py-4 widget-filter widget-filter-price border-top">
+                        <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                            data-bs-toggle="collapse" href="#filter-modal-price" role="button" aria-expanded="true"
+                            aria-controls="filter-modal-price">
+                            Price
+                        </a>
+                        <div id="filter-modal-price" class="collapse show">
+                            <div class="filter-price mt-6"></div>
+                            <div class="d-flex justify-content-between align-items-center mt-7">
+                                <div class="input-group mb-0 me-2 border">
+                                    <span class="input-group-text bg-transparent fs-7 p-2 text-muted border-0">$</span>
+                                    <input type="number" min="00" max="1000" step="1"
+                                        class="filter-min form-control-sm border flex-grow-1 text-muted border-0">
+                                </div>
+                                <div class="input-group mb-0 ms-2 border">
+                                    <span class="input-group-text bg-transparent fs-7 p-2 text-muted border-0">$</span>
+                                    <input type="number" min="00" max="1000" step="1"
+                                        class="filter-max form-control-sm flex-grow-1 text-muted border-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Price Filter -->
+
+                    <!-- Brands Filter -->
+                    <div class="py-4 widget-filter border-top">
+                        <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                            data-bs-toggle="collapse" href="#filter-modal-brands" role="button" aria-expanded="true"
+                            aria-controls="filter-modal-brands">
+                            Licencia
+                        </a>
+                        <div id="filter-modal-brands" class="collapse show">
+                            <div class="input-group my-3 py-1">
+                                <input type="text" class="form-control py-2 filter-search rounded" placeholder="Search"
+                                    aria-label="Search">
+                                <span
+                                    class="input-group-text bg-transparent p-2 position-absolute top-10 end-0 border-0 z-index-20"><i
+                                        class="ri-search-2-line text-muted"></i></span>
+                            </div>
+                            <div class="simplebar-wrapper">
+                                <div class="filter-options" data-pixr-simplebar>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-0">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-0">Playeras <span
+                                                class="text-muted ms-1 fs-9">(189)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-1">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-1">Sudaderas<span
+                                                class="text-muted ms-1 fs-9">(78)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-2">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-2">Calcetas <span
+                                                class="text-muted ms-1 fs-9">(18)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-3">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-3">Overoles <span
+                                                class="text-muted ms-1 fs-9">(25)</span></label>
+                                    </div>
+                                    <div class="form-group form-check-custom mb-1">
+                                        <input type="checkbox" class="form-check-input" id="filter-brands-modal-4">
+                                        <label
+                                            class="form-check-label fw-normal text-body flex-grow-1 d-flex align-items-center"
+                                            for="filter-brands-modal-4">Chamarras <span
+                                                class="text-muted ms-1 fs-9">(11)</span></label>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Brands Filter -->
+
+                    <!-- Sizes Filter -->
+                    <div class="py-4 widget-filter border-top">
+                        <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                            data-bs-toggle="collapse" href="#filter-modal-sizes" role="button" aria-expanded="true"
+                            aria-controls="filter-modal-sizes">
+                            Talla
+                        </a>
+                        <div id="filter-modal-sizes" class="collapse show">
+                            <div class="filter-options mt-3">
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-0">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-0">Chico</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-1">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-1">Mediano</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-2">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-2">Grande</label>
+                                </div>
+                                <div class="form-group d-inline-block mr-2 mb-2 form-check-bg form-check-custom">
+                                    <input type="checkbox" class="form-check-bg-input" id="filter-sizes-modal-3">
+                                    <label class="form-check-label fw-normal" for="filter-sizes-modal-3">XL</label>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <!-- / Sizes Filter -->
+
+                        <!-- Colour Filter -->
+                       
+                        <!-- / Colour Filter -->
+                    </div>
+                    <!-- / Filters-->
+
+                    <!-- Filter Button-->
+                    <div class="border-top pt-3">
+                        <a href="#" class="btn btn-dark mt-2 d-block hover-lift-sm hover-boxshadow"
+                            data-bs-dismiss="offcanvas" aria-label="Close">Hecho</a>
+                    </div>
+                    <!-- /Filter Button-->
+                </div>
+            </div>
+        </div>
+        <!-- Theme JS -->
+        <!-- Vendor JS -->
+        <script src="./assets/js/vendor.bundle.js"></script>
+
+        <!-- Theme JS -->
+        <script src="./assets/js/theme.bundle.js"></script>
+</body>
+
+</html>

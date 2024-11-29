@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+
+<head>
+  <!-- Page Meta Tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+
+  <!-- Custom Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled-->
+  <noscript>
+    <style>
+      /**
+          * Reinstate scrolling for non-JS clients
+          */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title>SkateLine | Login</title>
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNWJTRKR86"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-QNWJTRKR86');
+</script>
+
+<body class=" bg-light">
+
+  <!-- Main Section-->
+  <section class="mt-0 overflow-hidden  vh-100 d-flex justify-content-center align-items-center p-4">
+    <!-- Page Content Goes Here -->
+
+    <!-- Login Form-->
+    <div class="col col-md-8 col-lg-6 col-xxl-5">
+      <!-- Logo-->
+      <a class="navbar-brand fw-bold fs-3 flex-shrink-0 order-0 align-self-center justify-content-center d-flex mx-0 px-0"
+        href="./index.html">
+        <div class="d-flex align-items-center">
+          <img class="f-w-7" src="./assets/images/favicon/favicon-32x32.png" alt="">
+      </div>
+      </a>
+      <!-- / Logo-->
+      <div class="shadow-xl p-4 p-lg-5 bg-white">
+        <h1 class="text-center fw-bold mb-5 fs-2">Inicio de sesión</h1>
+      
+        <form>
+          <div class="form-group">
+            <label class="form-label" for="login-email">Correo electrónico</label>
+            <input type="email" class="form-control" id="login-email" placeholder="correo@electronico.com">
+          </div>
+          <div class="form-group">
+            <label for="login-password" class="form-label d-flex justify-content-between align-items-center">
+              Contraseña
+              <a href="./forgotten-password.html" class="text-muted small">¿Olvidó su contraseña?</a>
+            </label>
+            <input type="password" class="form-control" id="login-password" placeholder="Contraseña">
+          </div>
+          <a href="./user-profile.html" class="btn btn-dark d-block w-100 my-4" role="button">Iniciar sesión</a>
+        </form>
+        <p class="d-block text-center text-muted">¿No tienes cuenta? <a class="text-muted"
+            href="./register.html">Registrarse</a></p>
+      </div>
+
+    </div>
+    <!-- / Login Form-->
+
+    <!-- /Page Content -->
+  </section>
+  <!-- / Main Section-->
+
+
+  <!-- Theme JS -->
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+</body>
+
+</html>

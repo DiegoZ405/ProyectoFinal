@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+  <!-- Page Meta Tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+
+  <!-- Custom Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled-->
+  <noscript>
+    <style>
+      /**
+          * Reinstate scrolling for non-JS clients
+          */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title>KiwiiToys</title>
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNWJTRKR86"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QNWJTRKR86');
+</script>
+<body class="">
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white flex-column border-0  ">
+        <div class="container-fluid">
+            <div class="w-100">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+                    <!-- Logo-->
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.html">
+                        <div class="d-flex align-items-center">
+                            <img class="f-w-7" src="./assets/images/favicon/favicon-32x32.png" alt="">
+                        </div>
+                    </a>
+                    <!-- / Logo-->
+
+                    <!-- Navbar Icons-->
+                    <ul class="list-unstyled mb-0 d-flex align-items-center order-1 order-lg-2 nav-sidelinks">
+
+                        <!-- Mobile Nav Toggler-->
+                        <li class="d-lg-none">
+                            <span class="nav-link text-body d-flex align-items-center cursor-pointer"
+                                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                                aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation"><i class="ri-menu-line ri-lg me-1"></i> Menú</span>
+                        </li>
+                        <!-- /Mobile Nav Toggler-->
+
+                        <!-- Navbar Search-->
+                        <li class="d-none d-sm-block">
+                            <span class="nav-link text-body search-trigger cursor-pointer">Búscar</span>
+
+                            <!-- Search navbar overlay-->
+                            <div class="navbar-search d-none">
+                                <div class="input-group mb-3 h-100">
+                                    <span class="input-group-text px-4 bg-transparent border-0"><i
+                                            class="ri-search-line ri-lg"></i></span>
+                                    <input type="text" class="form-control text-body bg-transparent border-0"
+                                        placeholder="">
+                                    <span
+                                        class="input-group-text px-4 cursor-pointer disable-child-pointer close-search bg-transparent border-0"><i
+                                            class="ri-close-circle-line ri-lg"></i></span>
+                                </div>
+                            </div>
+                            <div class="search-overlay"></div>
+                            <!-- / Search navbar overlay-->
+
+                        </li>
+                        <!-- /Navbar Search-->
+
+                        <!-- Navbar Login-->
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="./login.html">
+                                Cuenta
+                            </a>
+                        </li>
+                        <!-- /Navbar Login-->
+                        <!-- Navbar Login-->
+                        <li class="ms-1 d-none d-lg-inline-block">
+                            <a class="nav-link text-body" href="./wishlist.html">
+                                Lista de deseos
+                            </a>
+                        </li>
+                        <!-- /Navbar Login-->
+                        <!-- Navbar Cart Icon-->
+                        <li class="ms-1 d-inline-block position-relative dropdown-cart">
+                            <button class="nav-link me-0 disable-child-pointer border-0 p-0 bg-transparent text-body"
+                                type="button">
+                                Carrito (1)
+                            </button>
+                            <div class="cart-dropdown dropdown-menu">
+
+                                <!-- Cart Header-->
+                                <div class="d-flex justify-content-between align-items-center border-bottom pt-3 pb-4">
+                                    <h6 class="fw-bolder m-0">Resumen de compra (1)</h6>
+                                    <i class="ri-close-circle-line text-muted ri-lg cursor-pointer btn-close-cart"></i>
+                                </div>
+                                <!-- / Cart Header-->
+
+                                <!-- Cart Items-->
+                                <div>
+
+                                    <!-- Cart Product-->
+                                    <div class="row mx-0 py-4 g-0 border-bottom">
+                                        <div class="col-2 position-relative">
+                                            <picture class="d-block ">
+                                                <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg"
+                                                    alt="HTML Bootstrap Template by Pixel Rocket">
+                                            </picture>
+                                        </div>
+                                        <div class="col-9 offset-1">
+                                            <div>
+                                                <h6 class="justify-content-between d-flex align-items-start mb-2">
+                                                    S.H.FIGUARTS: Dragon Ball Super Super Hero - Son Goku - Super Hero
+                                                    Ver. (Reissue) [Bandai]
+                                                    <i class="ri-close-line ms-3"></i>
+                                                </h6>
+                                                <span class="d-block text-muted fw-bolder text-uppercase fs-9">ESCALA:
+                                                    15CM / CANTIDAD: 1</span>
+                                            </div>
+                                            <p class="fw-bolder text-end text-muted m-0">$700</p>
+                                        </div>
+                                    </div>
+                                    <!-- Cart Product-->
+                                    
+                                <!-- /Cart Items-->
+
+                                <!-- Cart Summary-->
+                                <div>
+                                    <div class="pt-3">
+                                        <div
+                                            class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-start mb-4 mb-md-2">
+                                            <div>
+                                                <p class="m-0 fw-bold fs-5">Total</p>
+                                                <span class="text-muted small">Incluido IVA</span>
+                                            </div>
+                                            <p class="m-0 fs-5 fw-bold">$700</p>
+                                        </div>
+                                    </div>
+                                    <a href="./cart.html" class="btn btn-dark w-100 text-center mt-4"
+                                        role="button">Ver Carrito</a>
+                                </div>
+                                <!-- / Cart Summary-->
+                            </div>
+
+
+                        </li>
+                        <!-- /Navbar Cart Icon-->
+
+                    </ul>
+                    <!-- Navbar Icons-->
+
+                    <!-- Main Navigation-->
+                    <div class="flex-shrink-0 collapse navbar-collapse navbar-collapse-light w-auto flex-grow-1 order-2 order-lg-1"
+                        id="navbarNavDropdown">
+
+                        <!-- Menu-->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown dropdown position-static">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    KiwiiToys
+                                </a>
+                                <!-- Menswear dropdown menu-->
+                                <div class="dropdown-menu dropdown-megamenu">
+                                    <div class="container-fluid">
+                                        <div class="row g-0 g-lg-3">
+                                            <!-- Menswear Dropdown Menu Links Section-->
+                                            <div class="col col-lg-8 py-lg-5">
+                                                <div class="row py-3 py-lg-0 flex-wrap gx-4 gy-6">
+                                                    <!-- menu row-->
+                                                    <div class="col">
+                                                        <h6 class="dropdown-heading">Licencias</h6>
+                                                        <ul class="list-unstyled">
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Dragon Ball</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Sailor Moon</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">One Piece</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Demon Slayer</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Jujutsu Kaisen</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Boku no Hero</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Frieren</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Naruto</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item dropdown-link-all"
+                                                                    href="./category.html">Ver Todo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- / menu row-->
+
+                                                    <!-- menu row-->
+                                                    <div class="col">
+                                                        <h6 class="dropdown-heading">Figuras</h6>
+                                                        <ul class="list-unstyled">
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">S.H.Figuarts</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Mini Figuarts</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Myth Cloth</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Anime Heroes</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Banpresto</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Proplica</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">S.H.Monstarts</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Model Kit</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item dropdown-link-all"
+                                                                    href="./category.html">Ver Todo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- / menu row-->
+
+                                                    <!-- menu row-->
+                                                    <div class="d-none d-xxl-block col">
+                                                        <h6 class="dropdown-heading">Memorabilia</h6>
+                                                        <ul class="list-unstyled">
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Almohadas</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Acrílicos</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Llaveros</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Pines</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Manga</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Cartas</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Posters</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item"
+                                                                    href="./category.html">Bajillas</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item dropdown-link-all"
+                                                                    href="./category.html">Ver Todo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- / menu row-->
+
+                                                    <!-- menu row-->
+                                                    <div class="col">
+                                                        <h6 class="dropdown-heading text-danger">Peluches</h6>
+                                                        <ul class="list-unstyled">
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item text-danger"
+                                                                    href="./category.html">Kirby</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item text-danger"
+                                                                    href="./category.html">Pokemon</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item text-danger"
+                                                                    href="./category.html">Godzilla</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item text-danger"
+                                                                    href="./category.html">Sanrio</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item text-danger"
+                                                                    href="./category.html">Super Mario</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item text-danger"
+                                                                    href="./category.html">Animales</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item text-danger"
+                                                                    href="./category.html">Frieren</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item text-danger"
+                                                                    href="./category.html">Demon Slayer</a></li>
+                                                            <li class="dropdown-list-item"><a
+                                                                    class="dropdown-item text-danger dropdown-link-all"
+                                                                    href="./category.html">Ver Todo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- / menu row-->
+                                                </div>
+
+                                                <div
+                                                    class="align-items-center justify-content-between mt-5 d-none d-lg-flex">
+                                                    <div class="me-5 f-w-20">
+                                                        <a class="d-block" href="./category.html">
+                                                            <picture>
+                                                                <img class="img-fluid d-table mx-auto"
+                                                                    src="./assets/images/logos/BANDAI.svg" alt="">
+                                                            </picture>
+                                                        </a>
+                                                    </div>
+                                                    <div class="me-5 f-w-20">
+                                                        <a class="d-block" href="./category.html">
+                                                            <picture>
+                                                                <img class="img-fluid d-table mx-auto"
+                                                                    src="./assets/images/logos/Square_Enix.svg" alt="">
+                                                            </picture>
+                                                        </a>
+                                                    </div>
+                                                    <div class="me-5 f-w-20">
+                                                        <a class="d-block" href="./category.html">
+                                                            <picture>
+                                                                <img class="img-fluid d-table mx-auto"
+                                                                    src="./assets/images/logos/crunchyroll.svg" alt="">
+                                                            </picture>
+                                                        </a>
+                                                    </div>
+                                                    <div class="me-5 f-w-20">
+                                                        <a class="d-block" href="./category.html">
+                                                            <picture>
+                                                                <img class="img-fluid d-table mx-auto"
+                                                                    src="./assets/images/logos/GoodSmile.svg" style="filter: grayscale(1);" alt="">
+                                                            </picture>
+                                                        </a>
+                                                    </div>
+                                                    <div class="me-5 f-w-20">
+                                                        <a class="d-block" href="./category.html">
+                                                            <picture>
+                                                                <img class="img-fluid d-table mx-auto"
+                                                                    src="./assets/images/logos/MAFEX.webp" style="filter: grayscale(1);" alt="">
+                                                            </picture>
+                                                        </a>
+                                                    </div>
+                                                    <div class="me-5 f-w-20">
+                                                        <a class="d-block" href="./category.html">
+                                                            <picture>
+                                                                <img class="img-fluid d-table mx-auto"
+                                                                    src="./assets/images/logos/Kaiyodo.svg" alt="">
+                                                            </picture>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /Menswear Dropdown Menu Links Section-->
+
+                                            <!-- Menswear Dropdown Menu Images Section-->
+                                            <div class="col-lg-4 d-none d-lg-block">
+                                                <div class="vw-50 border-start h-100 position-absolute"></div>
+                                                <div class="py-lg-5 position-relative z-index-10 px-lg-4">
+                                                    <div class="row g-4">
+                                                        <div class="col-12 col-md-6">
+                                                            <div
+                                                                class="card justify-content-center d-flex align-items-center bg-transparent">
+                                                                <picture class="w-100 d-block mb-2 mx-auto">
+                                                                    <img class="w-100 rounded" title=""
+                                                                        src="./assets/images/banners/banner-12.jpg"
+                                                                        alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                </picture>
+                                                                <a class="fw-bolder link-cover"
+                                                                href="https://tamashiiweb.com/event/667/?wovn=es" target="_blank">Noticias</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div
+                                                                class="card justify-content-center d-flex align-items-center bg-transparent">
+                                                                <picture class="w-100 d-block mb-2 mx-auto">
+                                                                    <img class="w-100 rounded" title=""
+                                                                        src="./assets/images/banners/banner-13.jpg"
+                                                                        alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                </picture>
+                                                                <a class="fw-bolder link-cover"
+                                                                    href="https://tamashiiweb.com/special/jumpcs/dandadan/?wovn=es" target="_blank">Nuevos Lanzamientos</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div
+                                                                class="card justify-content-center d-flex align-items-center bg-transparent">
+                                                                <picture class="w-100 d-block mb-2 mx-auto">
+                                                                    <img class="w-100 rounded" title=""
+                                                                        src="./assets/images/banners/banner-14.jpg"
+                                                                        alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                </picture>
+                                                                <a class="fw-bolder link-cover"
+                                                                    href="https://tamashiiweb.com/special/gundam/?wovn=es" target="_blank">Preventas</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div
+                                                                class="card justify-content-center d-flex align-items-center bg-transparent">
+                                                                <picture class="w-100 d-block mb-2 mx-auto">
+                                                                    <img class="w-100 rounded" title=""
+                                                                        src="./assets/images/banners/banner-15.jpg"
+                                                                        alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                </picture>
+                                                                <a class="fw-bolder link-cover"
+                                                                    href="https://www.crunchyroll.com" target="_blank">Crunchyroll</a>
+                                                                    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="./category.html"
+                                                        class="btn btn-link p-0 fw-bolder text-link-border mt-5 text-dark mx-auto d-table">Visita
+                                                        las diferentes categorias</a>
+                                                </div>
+                                            </div>
+                                            <!-- Menswear Dropdown Menu Images Section-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / Menswear dropdown menu-->
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Otras Marcas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./category.html">Mafex</a></li>
+                                    <li><a class="dropdown-item" href="./category.html">Good Smile</a></li>
+                                    <li><a class="dropdown-item" href="./category.html">Kaiyodo</a></li>
+                                    <li><a class="dropdown-item" href="./category.html">Arts Spirits</a></li>
+                                    <li><a class="dropdown-item" href="./category.html">Square Enix</a></li>
+                                    <li><a class="dropdown-item" href="./category.html">Kotobukiya</a></li>
+                                </ul>
+                            
+                            
+                        </ul> <!-- / Menu-->
+
+                    </div>
+                    <!-- / Main Navigation-->
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- / Navbar--> <!-- / Navbar-->
+
+
+    <!-- Main Section-->
+    <section class="mt-0 ">
+        <!-- Page Content Goes Here -->            
+        
+        <!-- Breadcrumbs-->
+        <div class="bg-dark py-6">
+            <div class="container-fluid">
+                <nav class="m-0" aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item breadcrumb-light"><a href="./index.html">Inicio</a></li>
+                      <li class="breadcrumb-item breadcrumb-light"><a href="./category.html">Starwars</a></li>
+                      <li class="breadcrumb-item  breadcrumb-light active" aria-current="page">S.H.FIGUARTS - Star Wars: A New Hope - Stormtrooper - Classic Ver. [Bandai Spirits]</li>
+                    </ol>
+                </nav>            </div>
+        </div>
+        <!-- / Breadcrumbs-->
+
+        <div class="container-fluid mt-5">
+
+            <!-- Product Top Section-->
+            <div class="row g-9" data-sticky-container>
+
+                <!-- Product Images-->
+                <div class="col-12 col-md-6 col-xl-7">
+                    <div class="row g-3" data-aos="fade-right">
+                        <div class="col-12">
+                            <picture>
+                                <img class="img-fluid" data-zoomable src="./assets/images/products/product-page-13.jpg" alt="KiwiiToys">
+                            </picture>
+                        </div>
+                        <div class="col-12">
+                            <picture>
+                                <img class="img-fluid" data-zoomable src="./assets/images/products/product-page-14.jpg" alt="KiwiiToys">
+                            </picture>
+                        </div>
+                        <div class="col-12">
+                            <picture>
+                                <img class="img-fluid" data-zoomable src="./assets/images/products/product-page-15.jpg" alt="KiwiiToys">
+                            </picture>
+                        </div>
+                        <div class="col-12">
+                            <picture>
+                                <img class="img-fluid" data-zoomable src="./assets/images/products/product-page-16.jpg" alt="KiwiiToys">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Product Images-->
+    
+                <!-- Product Information-->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="sticky-top top-5">
+                        <div class="pb-3" data-aos="fade-in">
+                            <div class="d-flex align-items-center mb-3">
+                                <p class="small fw-bolder text-uppercase tracking-wider text-muted m-0 me-4">Stormtrooper</p>
+                                <div class="d-flex justify-content-start align-items-center disable-child-pointer cursor-pointer"
+                                data-pixr-scrollto
+                                data-target=".reviews">
+                                <!-- Review Stars Small-->
+                                <div class="rating position-relative d-table">
+                                    <div class="position-absolute stars" style="width: 80%">
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                    </div>
+                                </div>        <small class="text-muted d-inline-block ms-2 fs-bolder">(15 reseñas)</small>
+                            </div>
+                            </div>
+                            
+                            <h1 class="mb-1 fs-2 fw-bold">S.H.FIGUARTS - Star Wars: A New Hope - Stormtrooper - Classic Ver. [Bandai Spirits]</h1>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-4 m-0">$800</p>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <small class="text-uppercase pt-4 d-block fw-bolder text-muted">
+                                        Edición Disponible :
+                                </small>
+                                <div class="mt-4 d-flex justify-content-start flex-wrap align-items-start">
+                                    <picture class="me-2">
+                                        <img class="f-w-24 p-2 bg-light border-bottom border-dark border-2 cursor-pointer" src="./assets/images/products/product-page-13.jpg" alt="KiwiiToys">
+                                    </picture>
+                                    <picture>
+                                        <img class="f-w-24 p-2 bg-light cursor-pointer" src="./assets/images/products/product-page-14.jpg" alt="KiwiiToys">
+                                    </picture>
+                                </div>
+                            </div>
+                            <a class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow" href="./cart.html">Añadir al Carrito</a>
+
+                            <a class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow" href="./wishlist.html">Añadir a la Lista de Deseos</a>
+
+                            <!-- Product Highlights-->
+                                <div class="my-5">
+                                    
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                            <div class="text-center px-2">
+                                                <i class="ri-24-hours-line ri-2x"></i>
+                                                <small class="d-block mt-1">Entrega Express</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="text-center px-2">
+                                                <i class="ri-secure-payment-line ri-2x"></i>
+                                                <small class="d-block mt-1">Seguridad de Pago</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="text-center px-2">
+                                                <i class="ri-service-line ri-2x"></i>
+                                                <small class="d-block mt-1">Devolución Gratis</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- / Product Highlights-->
+                        
+                            <!-- Product Accordion -->
+                            <div class="accordion" id="accordionProduct">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Detalles del Producto
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionProduct">
+                                    <div class="accordion-body">
+                                        <p class="m-0">¡Presentamos el S.H.Figuarts - Star Wars: Una Nueva Esperanza - Stormtrooper (Classic Ver.) de Bandai Spirits! Esta figura icónica da vida al diseño clásico del Stormtrooper de Star Wars Episodio IV: Una Nueva Esperanza con un increíble detalle y precisión. Con un cuerpo altamente articulado y manos intercambiables para diversas poses, el Stormtrooper está listo para presentaciones llenas de acción. Completo con accesorios icónicos de blaster y un diseño de casco elegante y auténtico, esta figura es imprescindible para cualquier aficionado de Star Wars. ¡Añade el S.H.Figuarts - Star Wars: Una Nueva Esperanza - Stormtrooper (Classic Ver.) a tu colección y revive las icónicas batallas del Imperio Galáctico!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Detalles y Características
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionProduct">
+                                      <div class="accordion-body">
+                                          <ul class="list-group list-group-flush">
+                                              <li class="list-group-item d-flex border-0 row g-0 px-0">
+                                                  <span class="col-4 fw-bolder">Fabricante:</span>
+                                                  
+                                                  <span class="col-7 offset-1">Bandai</span>
+                                              </li>
+                                              <li class="list-group-item d-flex border-0 row g-0 px-0">
+                                                  <span class="col-4 fw-bolder">Material:</span>
+                                                  <span class="col-7 offset-1">ABS / PVC</span>
+                                              </li>
+                                              <li class="list-group-item d-flex border-0 row g-0 px-0">
+                                                <span class="col-4 fw-bolder">Escala:</span>
+                                                <span class="col-7 offset-1">15CM</span>
+                                            </li>
+                                            <li class="list-group-item d-flex border-0 row g-0 px-0">
+                                                <span class="col-4 fw-bolder">Referencia:</span>
+                                                <span class="col-7 offset-1">4573102673374</span>
+                                            </li>
+                                          </ul>
+                                      </div>
+                                    </div>
+                                  </div>        
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Envíos & Devoluciones
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionProduct">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex border-0 row g-0 px-0">
+                                                <span class="col-4 fw-bolder">Envío</span>
+                                                <span class="col-7 offset-1">Diferentes metodos de envíos seguros</span>
+                                            </li>
+                                            <li class="list-group-item d-flex border-0 row g-0 px-0">
+                                                <span class="col-4 fw-bolder">Devoluciones</span>
+                                                <span class="col-7 offset-1">Periodo de devolución de 30 días. Revisa nuestros <a class="text-link-border" href="#">terminos & condiciones.</a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- / Product Accordion-->
+                        </div>                    </div>
+                </div>
+                <!-- / Product Information-->
+            </div>
+            <!-- / Product Top Section-->
+
+            <div class="row g-0">
+
+                <!-- Related Products-->
+                <div class="col-12" data-aos="fade-up">
+                    <h3 class="fs-4 fw-bolder mt-7 mb-4">También te puede interesar</h3>
+                    <!-- Swiper Latest -->
+                    <div class="swiper-container" data-swiper data-options='{
+                        "spaceBetween": 10,
+                        "loop": true,
+                        "autoplay": {
+                          "delay": 5000,
+                          "disableOnInteraction": false
+                        },
+                        "navigation": {
+                          "nextEl": ".swiper-next",
+                          "prevEl": ".swiper-prev"
+                        },   
+                        "breakpoints": {
+                          "600": {
+                            "slidesPerView": 2
+                          },
+                          "1024": {
+                            "slidesPerView": 3
+                          },       
+                          "1400": {
+                            "slidesPerView": 4
+                          }
+                        }
+                      }'>
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <!-- Card Product-->
+                          <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                              <div class="card-img position-relative">
+                                  <div class="card-badges">
+                                          <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Venta</span>
+                                  </div>
+                                  <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                  <picture class="position-relative overflow-hidden d-block bg-light">
+                                      <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-10.jpg" alt="">
+                                  </picture>
+                                      <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                          <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar Anuncio</button>
+                                      </div>
+                              </div>
+                              <div class="card-body px-0">
+                                  <a class="text-decoration-none link-cover" href="./product10.html">S.H.FIGUARTS: Dragon Ball Super Super Hero - Vegeta - Super Hero Ver. (Reissue) [Bandai Spirits]</a>
+                                  <small class="text-muted d-block">Escala: 15CM</small>
+                                          <p class="mt-2 mb-0 small"><s class="text-muted">$700</s> <span class="text-danger">$500</span></p>
+                              </div>
+                          </div>
+                          <!--/ Card Product-->
+                        </div>
+                        <div class="swiper-slide">
+                          <!-- Card Product-->
+                          <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                              <div class="card-img position-relative">
+                                  <div class="card-badges">
+                                          <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> Nuevo</span>
+                                  </div>
+                                  <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                  <picture class="position-relative overflow-hidden d-block bg-light">
+                                      <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-2.jpg" alt="">
+                                  </picture>
+                                      <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                          <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar Anuncio</button>
+                                      </div>
+                              </div>
+                              <div class="card-body px-0">
+                                  <a class="text-decoration-none link-cover" href="./product2.html">S.H.FIGUARTS: Kaijuu No. 8 - Kikoru Shinomiya [Bandai Spirits]</a>
+                                  <small class="text-muted d-block">Escala: 15cm</small>
+                                          <p class="mt-2 mb-0 small">$800</p>
+                              </div>
+                          </div>
+                          <!--/ Card Product-->
+                        </div>
+                        <div class="swiper-slide">
+                          <!-- Card Product-->
+                          <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                              <div class="card-img position-relative">
+                                  <div class="card-badges">
+                                          <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-secondary rounded-circle d-block me-1"></span> Agotado</span>
+                                  </div>
+                                  <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                  <picture class="position-relative overflow-hidden d-block bg-light">
+                                      <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-3.jpg" alt="">
+                                  </picture>
+                              </div>
+                              <div class="card-body px-0">
+                                  <a class="text-decoration-none link-cover" href="./product3.html">S.H.FIGUARTS: Ultraman Orb: The Origin Saga - Ultraman New Generation Stars Ver [Bandai Spirits]</a>
+                                  <small class="text-muted d-block">Escala: 15CM</small>
+                                      <p class="mt-2 mb-0 small text-muted">Agotado</p>
+                              </div>
+                          </div>
+                          <!--/ Card Product-->
+                        </div>
+                        <div class="swiper-slide">
+                          <!-- Card Product-->
+                          <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                              <div class="card-img position-relative">
+                                  <div class="card-badges">
+                                  </div>
+                                  <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                  <picture class="position-relative overflow-hidden d-block bg-light">
+                                      <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-4.jpg" alt="">
+                                  </picture>
+                                      <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                          <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar Anuncio</button>
+                                      </div>
+                              </div>
+                              <div class="card-body px-0">
+                                  <a class="text-decoration-none link-cover" href="./product4.html">S.H.FIGUARTS - Star Wars: A New Hope - Stormtrooper - Classic Ver. [Bandai Spirits]</a>
+                                  <small class="text-muted d-block">Escala: 15CM</small>
+                                          <p class="mt-2 mb-0 small">$800</p>
+                              </div>
+                          </div>
+                          <!--/ Card Product-->
+                        </div>
+                        <div class="swiper-slide">
+                          <!-- Card Product-->
+                          <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                              <div class="card-img position-relative">
+                                  <div class="card-badges">
+                                          <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Venta</span>
+                                  </div>
+                                  <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                  <picture class="position-relative overflow-hidden d-block bg-light">
+                                      <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-5.jpg" alt="">
+                                  </picture>
+                                      <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                          <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar Anuncio</button>
+                                      </div>
+                              </div>
+                              <div class="card-body px-0">
+                                  <a class="text-decoration-none link-cover" href="./product8.html">S.H.FIGUARTS: Kimetsu no Yaiba (Demon Slayer) - Tomioka Giyuu [Bandai Spirits]</a>
+                                  <small class="text-muted d-block">Escala: 15CM</small>
+                                          <p class="mt-2 mb-0 small"><s class="text-muted">$700</s> <span class="text-danger">$600</span></p>
+                              </div>
+                          </div>
+                          <!--/ Card Product-->
+                        </div>
+                        <div class="swiper-slide">
+                          <!-- Card Product-->
+                          <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                              <div class="card-img position-relative">
+                                  <div class="card-badges">
+                                          <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Venta</span>
+                                          <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> Nuevo</span>
+                                  </div>
+                                  <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                  <picture class="position-relative overflow-hidden d-block bg-light">
+                                      <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-6.jpg" alt="">
+                                  </picture>
+                                      <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                          <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar Anuncio</button>
+                                      </div>
+                              </div>
+                              <div class="card-body px-0">
+                                  <a class="text-decoration-none link-cover" href="./product6.html">S.H.FIGUARTS: Bishoujo Senshi Sailor Moon - Luna & Sailor Moon - Animation Color Edition (Reissue) [Bandai Spirits]</a>
+                                  <small class="text-muted d-block">Escala: 15CM</small>
+                                          <p class="mt-2 mb-0 small"><s class="text-muted">$700</s> <span class="text-danger">$500</span></p>
+                              </div>
+                          </div>
+                          <!--/ Card Product-->
+                        </div>
+                        <div class="swiper-slide">
+                          <!-- Card Product-->
+                          <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                              <div class="card-img position-relative">
+                                  <div class="card-badges">
+                                  </div>
+                                  <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                  <picture class="position-relative overflow-hidden d-block bg-light">
+                                      <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-7.jpg" alt="">
+                                  </picture>
+                                      <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                          <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar Anuncio</button>
+                                      </div>
+                              </div>
+                              <div class="card-body px-0">
+                                  <a class="text-decoration-none link-cover" href="./product7.html">S.H.FIGUARTS: One Piece - Monkey D. Luffy - The Raid on Onigashima (Reissue) [Bandai Spirits]</a>
+                                  <small class="text-muted d-block">Escala: 15CM</small>
+                                          <p class="mt-2 mb-0 small">$700</p>
+                              </div>
+                          </div>
+                          <!--/ Card Product-->
+                        </div>
+                        <div class="swiper-slide">
+                          <!-- Card Product-->
+                          <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                              <div class="card-img position-relative">
+                                  <div class="card-badges">
+                                          <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> Nuevo</span>
+                                  </div>
+                                  <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                  <picture class="position-relative overflow-hidden d-block bg-light">
+                                      <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-8.jpg" alt="">
+                                  </picture>
+                                      <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                          <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar Anuncio</button>
+                                      </div>
+                              </div>
+                              <div class="card-body px-0">
+                                  <a class="text-decoration-none link-cover" href="./product8.html">S.H.FIGUARTS: Kimetsu no Yaiba (Demon Slayer) - Kamado Tanjirou [Bandai Spirits]</a>
+                                  <small class="text-muted d-block">Escala: 15CM</small>
+                                          <p class="mt-2 mb-0 small">$600</p>
+                              </div>
+                          </div>
+                          <!--/ Card Product-->
+                        </div>
+                        <div class="swiper-slide">
+                          <!-- Card Product-->
+                          <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                              <div class="card-img position-relative">
+                                  <div class="card-badges">
+                                          <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> Nuevo</span>
+                                  </div>
+                                  <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                  <picture class="position-relative overflow-hidden d-block bg-light">
+                                      <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-9.jpg" alt="">
+                                  </picture>
+                                      <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                          <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quitar Anuncio</button>
+                                      </div>
+                              </div>
+                              <div class="card-body px-0">
+                                  <a class="text-decoration-none link-cover" href="./product9.html">S.H.FIGUARTS: Bishoujo Senshi Sailor Moon - Eternal Sailor Moon - 30th Anniversary [Bandai Spirits]</a>
+                                  <small class="text-muted d-block">Escala: 15CM</small>
+                                          <p class="mt-2 mb-0 small">$900</p>
+                              </div>
+                          </div>
+                    
+                              <!--/ Card Product-->
+                            </div>
+                      </div>
+                    
+                      <!-- Add Arrows -->
+                      <div
+                        class="swiper-prev top-50  start-0 z-index-30 cursor-pointer transition-all bg-white px-3 py-4 position-absolute z-index-30 top-50 start-0 mt-n8 d-flex justify-content-center align-items-center opacity-50-hover">
+                        <i class="ri-arrow-left-s-line ri-lg"></i></div>
+                      <div
+                        class="swiper-next top-50 end-0 z-index-30 cursor-pointer transition-all bg-white px-3 py-4 position-absolute z-index-30 top-50 end-0 mt-n8 d-flex justify-content-center align-items-center opacity-50-hover">
+                        <i class="ri-arrow-right-s-line ri-lg"></i></div>
+                    
+                    
+                    </div>
+                    <!-- / Swiper Latest-->                </div>
+                <!-- / Related Products-->
+
+                <!-- Reviews-->
+                <div class="col-12" data-aos="fade-up">
+                    <h3 class="fs-4 fw-bolder mt-7 mb-4 reviews">Reseñas</h3>
+                    
+                    <!-- Review Summary-->
+                    <div class="bg-light p-5 justify-content-between d-flex flex-column flex-lg-row">
+                        <div class="d-flex flex-column align-items-center mb-4 mb-lg-0">
+                            <div class="bg-dark text-white f-w-24 f-h-24 d-flex rounded-circle align-items-center justify-content-center fs-2 fw-bold mb-3">4.3</div>
+                            <!-- Review Stars Medium-->
+                            <div class="rating position-relative d-table">
+                                <div class="position-absolute stars" style="width: 88%">
+                                    <i class="ri-star-fill text-dark ri-2x mr-1"></i>
+                                    <i class="ri-star-fill text-dark ri-2x mr-1"></i>
+                                    <i class="ri-star-fill text-dark ri-2x mr-1"></i>
+                                    <i class="ri-star-fill text-dark ri-2x mr-1"></i>
+                                    <i class="ri-star-fill text-dark ri-2x mr-1"></i>
+                                </div>
+                                <div class="stars">
+                                    <i class="ri-star-fill ri-2x mr-1 text-muted opacity-25"></i>
+                                    <i class="ri-star-fill ri-2x mr-1 text-muted opacity-25"></i>
+                                    <i class="ri-star-fill ri-2x mr-1 text-muted opacity-25"></i>
+                                    <i class="ri-star-fill ri-2x mr-1 text-muted opacity-25"></i>
+                                    <i class="ri-star-fill ri-2x mr-1 text-muted opacity-25"></i>
+                                </div>
+                            </div>    </div>
+                        <div class="d-flex flex-grow-1 flex-column ms-lg-8">
+                            <div class="d-flex align-items-center justify-content-start mb-2">
+                                <div class="f-w-20">
+                                    <!-- Review Stars Small-->
+                                    <div class="rating position-relative d-table">
+                                        <div class="position-absolute stars" style="width: 100%">
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        </div>
+                                    </div>            </div>
+                                <div class="progress d-flex flex-grow-1 mx-4 f-h-1">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="fw-bold small d-block f-w-4 text-end">5</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start mb-2">
+                                <div class="f-w-20">
+                                    <!-- Review Stars Small-->
+                                    <div class="rating position-relative d-table">
+                                        <div class="position-absolute stars" mr- style="width: 80%">
+                                            <i class="ri-star-fill text-dark1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        </div>
+                                    </div>            </div>
+                                <div class="progress d-flex flex-grow-1 mx-4 f-h-1">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="fw-bold small d-block f-w-4 text-end">4</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start mb-2">
+                                <div class="f-w-20">
+                                    <!-- Review Stars Small-->
+                                    <div class="rating position-relative d-table">
+                                        <div class="position-absolute stars" style="width: 60%">
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        </div>
+                                    </div>            </div>
+                                <div class="progress d-flex flex-grow-1 mx-4 f-h-1">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="fw-bold small d-block f-w-4 text-end">3</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start mb-2">
+                                <div class="f-w-20">
+                                    <!-- Review Stars Small-->
+                                    <div class="rating position-relative d-table">
+                                        <div class="position-absolute stars" style="width: 40%">
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        </div>
+                                    </div>            </div>
+                                <div class="progress d-flex flex-grow-1 mx-4 f-h-1">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 8%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="fw-bold small d-block f-w-4 text-end">2</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start mb-2">
+                                <div class="f-w-20">
+                                    <!-- Review Stars Small-->
+                                    <div class="rating position-relative d-table">
+                                        <div class="position-absolute stars" style="width: 20%">
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                            <i class="ri-star-fill text-dark mr-1"></i>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                            <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        </div>
+                                    </div>            </div>
+                                <div class="progress d-flex flex-grow-1 mx-4 f-h-1">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="fw-bold small d-block f-w-4 text-end">1</span>
+                            </div>
+                            <p class="mt-3 mb-0 d-flex align-items-start"><i class="ri-chat-voice-line me-2"></i> 15 Compradores han reseñado este producto</p>
+                        </div>
+                    </div><!-- / Rewview Summary-->
+                    
+                    <!-- Reviews-->
+                    <div class="row g-6 g-md-8 g-lg-10 my-3">
+                        <div class="col-12 col-lg-6 col-xxl-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <!-- Review Stars Small-->
+                                <div class="rating position-relative d-table">
+                                    <div class="position-absolute stars" style="width: 80%">
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                    </div>
+                                </div>            <div class="text-muted small">13/07/2024 por Kiwii168</div>
+                            </div>
+                            <p class="fw-bold mb-2">Excelente Figura, Gran Precio</p>
+                            <p class="fs-7">Excelente pieza que bueno que la añadí a mi colección y a un gran precio.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xxl-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <!-- Review Stars Small-->
+                                <div class="rating position-relative d-table">
+                                    <div class="position-absolute stars" style="width: 40%">
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                    </div>
+                                </div>            <div class="text-muted small">13/07/2024 por ÓscarChonta</div>
+                            </div>
+                            <p class="fw-bold mb-2">Not es lo que esperaba</p>
+                            <p class="fs-7">La figura tenia detalles y articulacion floja de la cabeza.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xxl-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <!-- Review Stars Small-->
+                                <div class="rating position-relative d-table">
+                                    <div class="position-absolute stars" style="width: 90%">
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                    </div>
+                                </div>            <div class="text-muted small">13/07/2024 por Leonelsenpai69</div>
+                            </div>
+                            <p class="fw-bold mb-2">Decente por el precio</p>
+                            <p class="fs-7">Lo compré para acompañar mi otra figura y me pareció decente por el precio.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xxl-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <!-- Review Stars Small-->
+                                <div class="rating position-relative d-table">
+                                    <div class="position-absolute stars" style="width: 85%">
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                    </div>
+                                </div>            <div class="text-muted small">13/07/2024 por Krizz2009</div>
+                            </div>
+                            <p class="fw-bold mb-2">Gran figura</p>
+                            <p class="fs-7">Excelente pieza.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xxl-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <!-- Review Stars Small-->
+                                <div class="rating position-relative d-table">
+                                    <div class="position-absolute stars" style="width: 70%">
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                    </div>
+                                </div>            <div class="text-muted small">13/07/2024 por Vegueta777</div>
+                            </div>
+                            <p class="fw-bold mb-2">Buena figura</p>
+                            <p class="fs-7">Lo volveria a comprar para diferentes displays.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xxl-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <!-- Review Stars Small-->
+                                <div class="rating position-relative d-table">
+                                    <div class="position-absolute stars" style="width: 20%">
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                        <i class="ri-star-fill text-dark mr-1"></i>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                        <i class="ri-star-fill mr-1 text-muted opacity-25"></i>
+                                    </div>
+                                </div>            <div class="text-muted small">13/07/2024 por Evepro</div>
+                            </div>
+                            <p class="fw-bold mb-2">No me gustó</p>
+                            <p class="fs-7">Soy más de Hotwheels.</p>
+                        </div>
+                    </div>
+                    <!-- / Reviews-->
+                    
+                    <!-- Review Pagination-->
+                    <div class="d-flex flex-column f-w-44 mx-auto my-5 text-center">
+                        <small class="text-muted">Stormtrooper</small>
+                        
+                        <a href="#" class="btn btn-outline-dark btn-sm mt-5 align-self-center py-3 px-4 border-2">Regresar</a>
+                    </div><!-- / Review Pagination-->                </div>
+                <!-- / Reviews-->
+            </div>
+
+        </div>
+
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    <footer class="border-top py-5 mt-4  ">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                <div>
+                    <ul class="list-unstyled">
+                        <li class="d-inline-block me-1"><a target="_blank" class="text-decoration-none text-dark-hover transition-all"
+                                href="https://www.instagram.com/kiwii.toys/"><i class="ri-instagram-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all" 
+                                href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center justify-content-end flex-column flex-lg-row">
+                    <p class="small m-0 text-center text-lg-start">&copy;2024 KiwiiToys Todos los derechos reservados.</p>
+                    <ul class="list-unstyled mb-0 ms-lg-4 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
+                        <li class="bg-light p-2 d-flex align-items-center justify-content-center me-2">
+                            <i class="pi pi-sm pi-paypal"></i>
+                        </li>
+                        <li class="bg-light p-2 d-flex align-items-center justify-content-center me-2">
+                            <i class="pi pi-sm pi-mastercard"></i>
+                        </li>
+                        <li class="bg-light p-2 d-flex align-items-center justify-content-center"><i
+                                class="pi pi-sm pi-visa"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- / Footer-->
+
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+</body>
+
+</html>
