@@ -76,22 +76,22 @@
       <div class="shadow-xl p-4 p-lg-5 bg-white">
         <h1 class="text-center fw-bold mb-5 fs-2">Inicio de sesión</h1>
       
-        <form>
+        <form id="loginForm">
           <div class="form-group">
             <label class="form-label" for="login-email">Correo electrónico</label>
-            <input type="email" class="form-control" id="login-email" placeholder="correo@electronico.com">
+            <input type="email" class="form-control" id="login-email" placeholder="correo@electronico.com" required>
           </div>
           <div class="form-group">
             <label for="login-password" class="form-label d-flex justify-content-between align-items-center">
               Contraseña
               <a href="./forgotten-password.html" class="text-muted small">¿Olvidó su contraseña?</a>
             </label>
-            <input type="password" class="form-control" id="login-password" placeholder="Contraseña">
+            <input type="password" class="form-control" id="login-password" placeholder="Contraseña" required>
           </div>
-          <a href="./user-profile.html" class="btn btn-dark d-block w-100 my-4" role="button">Iniciar sesión</a>
+          <button type="submit" class="btn btn-dark d-block w-100 my-4">Iniciar sesión</button>
         </form>
-        <p class="d-block text-center text-muted">¿No tienes cuenta? <a class="text-muted"
-            href="./register.html">Registrarse</a></p>
+        <p class="d-block text-center text-muted">¿No tienes cuenta? <a class="text-muted" href="./register.html">Registrarse</a></p>
+        
       </div>
 
     </div>
@@ -109,5 +109,51 @@
   <!-- Theme JS -->
   <script src="./assets/js/theme.bundle.js"></script>
 </body>
+
+<script>
+  document.querySelector("#loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevenir el envío del formulario por defecto
+
+    // Obtener los valores de los campos
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
+
+    // Validación básica
+    if (!email || !password) {
+        alert('Por favor, llena todos los campos.');
+        return;
+    }
+
+    // Crear el objeto de datos a enviar
+    const data = {
+        email: email,
+        password: password
+    };
+
+    // Enviar los datos al backend utilizando Fetch API
+    fetch('login.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data) // Convertir el objeto de datos a formato JSON
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Si la respuesta es exitosa, redirigir a la página del perfil del usuario
+            window.location.href = './user-profile.html';
+        } else {
+            // Si hay un error, mostrarlo
+            alert(data.message || 'Hubo un error al iniciar sesión.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error al procesar la solicitud.');
+    });
+});
+
+</script>
 
 </html>

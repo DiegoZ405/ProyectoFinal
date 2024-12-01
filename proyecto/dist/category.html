@@ -388,9 +388,8 @@
             </div> <!-- /Category Toolbar-->
 
             <!-- Products-->
-            <div class="row g-4">
+            <!-- <div class="row g-4">
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <!-- Card Product-->
                     <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
                         <div class="card-img position-relative">
                             <div class="card-badges">
@@ -414,8 +413,11 @@
                             <p class="mt-2 mb-0 small"><s class="text-muted">$300</s> <span
                                     class="text-danger">$360</span></p>
                         </div>
-                    </div>
+                    </div> -->
                     <!--/ Card Product-->
+                    <div id="product-card" class="card">
+                        <img src="./assets/images/products/product-5.jpg" alt="Nombre del Producto" style="width:300px; height:auto;">
+                    </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <!-- Card Product-->
@@ -826,5 +828,39 @@
         <!-- Theme JS -->
         <script src="./assets/js/theme.bundle.js"></script>
 </body>
+<script>
+    // Fetch product data from PHP script
+    fetch('category.php')
+        .then(response => response.json())
+        .then(data => {
+            const card = document.getElementById('product-card');
 
+            // Check for errors in the data
+            if (data.error) {
+                card.innerHTML = `<p>${data.error}</p>`;
+                return;
+            }
+
+            // Generate product card with the fetched data
+            card.innerHTML = `
+                <h2>${data.name}</h2>
+                <p>Tallas: ${data.description}</p>
+                <p class="price">$${data.price}</p>
+                <button id="buy-button">Comprar</button>
+            `;
+
+            // Add an event listener to the "Comprar" button
+            document.getElementById('buy-button').addEventListener('click', () => {
+                alert('Producto añadido al carrito.');
+            });
+        })
+        .catch(error => {
+            document.getElementById('product-card').innerHTML = `
+                <p>Error al cargar el producto.</p>
+                <p>${error}</p>
+            `;
+        });          
+</script>
+
+</body>
 </html>

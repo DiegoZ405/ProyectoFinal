@@ -339,7 +339,6 @@
             <h1>Perfil de Usuario</h1>
             <br>
             <div class="row">
-                <!-- User Info -->
                 <div class="col-md-6">
                     <div class="card mb-4">
                         <div class="card-header">
@@ -350,18 +349,22 @@
                                 <img width="75px" height="80px" class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="user-profile-pic">
                             </picture>
                             <br>
-                            <p><h6 class="justify-content-between d-flex align-items-start mb-2 text-muted">Nombre: </h6> 
-                                <h6 class="justify-content-between d-flex align-items-start mb-2 text-body"> Fulanito Pérez</h6></p>
-                            <p><h6 class="justify-content-between d-flex align-items-start mb-2 text-muted">Correo electrónico: </h6> 
-                                <h6 class="justify-content-between d-flex align-items-start mb-2 text-body"> blablabla@gmial.com</h6></p>
-                            <p><h6 class="justify-content-between d-flex align-items-start mb-2 text-muted">Télefono: </h6> 
-                                <h6 class="justify-content-between d-flex align-items-start mb-2 text-body"> 449-123-23-56</h6></p>
-                            <p><h6 class="justify-content-between d-flex align-items-start mb-2 text-muted">Dirección: </h6> 
-                                <h6 class="justify-content-between d-flex align-items-start mb-2 text-body"> Hacienda blabla</h6></p>
+                            <p>
+                                <h6 class="justify-content-between d-flex align-items-start mb-2 text-muted">Nombre de Usuario:</h6>
+                                <h6 id="username" class="justify-content-between d-flex align-items-start mb-2 text-body"></h6>
+                            </p>
+                            <p>
+                                <h6 class="justify-content-between d-flex align-items-start mb-2 text-muted">Correo electrónico:</h6>
+                                <h6 id="email" class="justify-content-between d-flex align-items-start mb-2 text-body"></h6>
+                            </p>
                             <button class="btn btn-psuedo align-self-center">Editar Información</button>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        
+                
                 <!-- /User Info -->
 
                 <!-- Order Summary -->
@@ -486,5 +489,29 @@
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
 </body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('user-profile.php', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            document.getElementById('username').textContent = data.username;
+            document.getElementById('email').textContent = data.email;
+        } else {
+            alert('Hubo un error al obtener la información del usuario.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error al procesar la solicitud.');
+    });
+});
 
+
+</script>
 </html>
