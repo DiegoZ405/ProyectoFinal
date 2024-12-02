@@ -123,13 +123,13 @@
                         <li class="ms-1 d-inline-block position-relative dropdown-cart">
                             <button class="nav-link me-0 disable-child-pointer border-0 p-0 bg-transparent text-body"
                                 type="button">
-                                Carrito (2)
+                                Carrito
                             </button>
                             <div class="cart-dropdown dropdown-menu">
 
                                 <!-- Cart Header-->
                                 <div class="d-flex justify-content-between align-items-center border-bottom pt-3 pb-4">
-                                    <h6 class="fw-bolder m-0">Resumen de compra (2)</h6>
+                                    <h6 class="fw-bolder m-0">Resumen de compra</h6>
                                     <i class="ri-close-circle-line text-muted ri-lg cursor-pointer btn-close-cart"></i>
                                 </div>
                                 <!-- / Cart Header-->
@@ -410,23 +410,32 @@
                             
                             <h1 class="mb-1 fs-2 fw-bold">Playera Catzilla</h1>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="fs-4 m-0">$300</p>
+                                <p class="fs-4 m-0" id="precio-producto">$300</p>
                             </div>
                             
                             <div class="mb-3">
                                 <small class="text-uppercase pt-4 d-block fw-bolder text-muted">
-                                        Edición Disponible :
+                                    Edición Disponible:
                                 </small>
                                 <div class="mt-4 d-flex justify-content-start flex-wrap align-items-start">
                                     <picture class="me-2">
-                                        <img class="f-w-24 p-2 bg-light border-bottom border-dark border-2 cursor-pointer" src="./assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="f-w-24 p-2 bg-light border-bottom border-dark border-2 cursor-pointer" src="./assets/images/products/product-cart-2.jpg" alt="Catzilla">
                                     </picture>
                                     <picture>
-                                        <img class="f-w-24 p-2 bg-light cursor-pointer" src="./assets/images/products/product-page-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="f-w-24 p-2 bg-light cursor-pointer" src="./assets/images/products/product-page-2.jpg" alt="Catzilla Alt">
                                     </picture>
                                 </div>
                             </div>
-                            <a class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow" href="./cart.html">Añadir al Carrito</a>
+                            
+                            <a 
+                                class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow" 
+                                onclick="añadirProductoAlCarrito(event)" 
+                                data-nombre="Playera Catzilla" 
+                                data-precio="300" 
+                                data-imagen="./assets/images/products/product-cart-2.jpg">
+                                Añadir al Carrito
+                            </a>
+                            
 
                             <a class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow" href="./wishlist.html">Añadir a la Lista de Deseos</a>
 
@@ -1160,6 +1169,7 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>

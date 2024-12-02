@@ -399,24 +399,33 @@
                             </div>
                             
                             <h1 class="mb-1 fs-2 fw-bold">Rompevientos Antitoon Vino</h1>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="fs-4 m-0">$829</p>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <small class="text-uppercase pt-4 d-block fw-bolder text-muted">
-                                        Edición Disponible :
-                                </small>
-                                <div class="mt-4 d-flex justify-content-start flex-wrap align-items-start">
-                                    <picture class="me-2">
-                                        <img class="f-w-24 p-2 bg-light border-bottom border-dark border-2 cursor-pointer" src="./assets/images/products/product-3.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
-                                    </picture>
-                                    <picture>
-                                        <img class="f-w-24 p-2 bg-light cursor-pointer" src="./assets/images/products/product-page-7.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
-                                    </picture>
-                                </div>
-                            </div>
-                            <a class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow" href="./cart.html">Añadir al Carrito</a>
+<div class="d-flex justify-content-between align-items-center">
+    <p class="fs-4 m-0" id="precio-producto">$829</p>
+</div>
+
+<div class="mb-3">
+    <small class="text-uppercase pt-4 d-block fw-bolder text-muted">
+        Edición Disponible:
+    </small>
+    <div class="mt-4 d-flex justify-content-start flex-wrap align-items-start">
+        <picture class="me-2">
+            <img class="f-w-24 p-2 bg-light border-bottom border-dark border-2 cursor-pointer" src="./assets/images/products/product-3.jpg" alt="Antitoon Vino">
+        </picture>
+        <picture>
+            <img class="f-w-24 p-2 bg-light cursor-pointer" src="./assets/images/products/product-page-7.jpg" alt="Antitoon Vino Alt">
+        </picture>
+    </div>
+</div>
+
+<a 
+    class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow" 
+    onclick="añadirProductoAlCarrito(event)" 
+    data-nombre="Rompevientos Antitoon Vino" 
+    data-precio="829" 
+    data-imagen="./assets/images/products/product-3.jpg">
+    Añadir al Carrito
+</a>
+
 
                             <a class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow" href="./wishlist.html">Añadir a la Lista de Deseos</a>
 
@@ -1153,6 +1162,8 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+    <script src="cart.js"></script>
+
 </body>
 
 </html>

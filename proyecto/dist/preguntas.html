@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkateLine</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            color: #000000;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar .menu {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .menu li {
+            display: inline;
+        }
+
+        .navbar .menu a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .navbar .menu a:hover {
+            background-color: #ffffff;
+        }
+
+        /* Contenedor principal */
+        .faq-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Título */
+        .faq-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007BFF;
+            text-align: center;
+        }
+
+        /* Estilo de preguntas y respuestas */
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #0056b3;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px 15px;
+            border-left: 4px solid #007BFF;
+            background: #f1f8ff;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.html">
+            <div class="d-flex align-items-center">
+                <img class="f-w-7" src="./assets/images/favicon/favicon-32x32.png" alt="">
+            </div>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="faq-container">
+        <h1 class="faq-title">Preguntas Frecuentes</h1>
+
+        <div class="faq-item">
+            <div class="faq-question">1. ¿Cómo puedo realizar una compra?</div>
+            <div class="faq-answer">Selecciona los productos que deseas, agrégalos al carrito y sigue los pasos para completar tu compra desde el botón "Finalizar compra".</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">2. ¿Cuáles son los métodos de pago aceptados?</div>
+            <div class="faq-answer">Aceptamos tarjetas de crédito, débito, transferencias bancarias y pagos a través de plataformas como PayPal.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">3. ¿Qué hago si no recibo mi pedido?</div>
+            <div class="faq-answer">Si no has recibido tu pedido dentro del plazo establecido, por favor contáctanos a través de nuestro formulario de contacto o escribe a soporte@tiendaropa.com para ayudarte.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">4. ¿Puedo rastrear mi pedido?</div>
+            <div class="faq-answer">Sí, una vez que tu pedido sea enviado, recibirás un correo con el número de seguimiento para que puedas rastrearlo.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">5. ¿Cuánto tardará en llegar mi pedido?</div>
+            <div class="faq-answer">El tiempo de entrega varía según la ubicación, pero generalmente tarda entre 3 y 7 días hábiles.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">6. ¿Puedo devolver o cambiar un producto?</div>
+            <div class="faq-answer">Sí, aceptamos devoluciones o cambios dentro de los primeros 30 días después de recibir el producto, siempre que esté en su estado original.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">7. ¿Tienen tiendas físicas?</div>
+            <div class="faq-answer">Por el momento, solo operamos en línea, pero nuestros productos están disponibles para envío a todo el país.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">8. ¿Qué hago si recibí un producto defectuoso?</div>
+            <div class="faq-answer">Lamentamos el inconveniente. Contáctanos con una foto del producto y tu número de pedido, y te enviaremos un reemplazo sin costo adicional.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">9. ¿Cómo puedo saber mi talla?</div>
+            <div class="faq-answer">En la página de cada producto encontrarás una tabla de tallas que te ayudará a elegir la más adecuada.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">10. ¿Ofrecen descuentos o promociones?</div>
+            <div class="faq-answer">Sí, regularmente tenemos descuentos y promociones. Suscríbete a nuestro boletín para recibir las últimas ofertas.</div>
+        </div>
+
+        <!-- Más preguntas y respuestas -->
+    </div>
+
+    <script>
+        // Interactividad para mostrar y ocultar respuestas
+        document.querySelectorAll(".faq-question").forEach(question => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</body>
+</html>
